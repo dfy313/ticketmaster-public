@@ -17,12 +17,12 @@ In this section, we implement a **Virtual Waiting Queue** using a **Lambda Autho
 ### 🔹 Part 1: Build and Test the Queue Locally
 
 **Title:** Ticketmaster – Section 6 (Part 1)  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998775#overview)
 
 ### 🔹 Part 2: Deploy to AWS
 
 **Title:** Ticketmaster – Section 6 (Part 2)  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998777#overview)
 
 # ⚙️ Instructions and Commands
 

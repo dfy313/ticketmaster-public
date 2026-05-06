@@ -9,7 +9,7 @@ In this section, we build a **Search Service** using **Amazon OpenSearch** to po
 ## 🎥 Video Walkthrough
 
 **Title:** Ticketmaster – Section 9  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998795#overview)
 
 # ⚙️ Instructions and Commands
 

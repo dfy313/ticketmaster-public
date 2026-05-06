@@ -10,7 +10,7 @@ We’ll set up a CloudFront distribution, apply caching policies, verify cache h
 ## 🎥 Video Walkthrough
 
 **Title:** Ticketmaster – Section 10  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998799#overview)
 
 # ⚙️ Instructions and Commands
 

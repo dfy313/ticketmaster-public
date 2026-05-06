@@ -19,12 +19,12 @@ For high-traffic events, users access a **Live-Updating Seat Map** powered by **
 ### 🔹 Part 1: Build the WebSocket Connection Manager
 
 **Title:** Ticketmaster – Section 7 (Part 1)  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998785#overview)
 
 ### 🔹 Part 2: Build High Traffic Handler & Test the Live Seat Map
 
 **Title:** Ticketmaster – Section 7 (Part 2)  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998787#overview)
 
 # ⚙️ Instructions and Commands
 

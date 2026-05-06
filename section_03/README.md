@@ -10,7 +10,7 @@ This logic is essential for preventing race conditions in high-traffic scenarios
 ## 🎥 Video Walkthrough
 
 **Title:** Ticketmaster – Section 3  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998757#overview)
 
 # ⚙️ Instructions and Commands
 

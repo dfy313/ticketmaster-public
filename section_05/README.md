@@ -9,7 +9,7 @@ In this section, we integrate all existing Lambda services with **API Gateway** 
 ## 🎥 Video Walkthrough
 
 **Title:** Ticketmaster – Section 5  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998769#overview)
 
 # ⚙️ Instructions and Commands
 

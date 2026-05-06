@@ -9,7 +9,7 @@ In this section, we implement **Phase 2 of the Booking Service**, which finalize
 ## 🎥 Video Walkthrough
 
 **Title:** Ticketmaster – Section 4  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998761#overview)
 
 # ⚙️ Instructions and Commands
 

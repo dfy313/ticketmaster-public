@@ -18,12 +18,12 @@ This allows all connected clients to see seat availability refresh in real time 
 ### 🔹 Part 1: Build the Broadcast Dispatcher
 
 **Title:** Ticketmaster – Section 8 (Part 1)  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998789#overview)
 
 ### 🔹 Part 2: Deploy & Test Real-Time Seat Map Updates
 
 **Title:** Ticketmaster – Section 8 (Part 2)  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998793#overview)
 
 # ⚙️ Instructions and Commands
 

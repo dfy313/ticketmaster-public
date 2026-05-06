@@ -9,7 +9,7 @@ In this section, we begin building the **Event Discovery Service** using AWS Lam
 ## 🎥 Video Walkthrough
 
 **Title:** Ticketmaster – Section 2  
-**Link:** [Watch on Udemy](https://www.udemy.com)
+**Link:** [Watch on Udemy](https://www.udemy.com/course/practical-system-design/learn/lecture/55998749#overview)
 
 # ⚙️ Instructions and Commands
 
