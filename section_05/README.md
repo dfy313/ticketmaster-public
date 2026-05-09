@@ -46,7 +46,7 @@ Package the **Event Discovery Service** for deployment:
 
   - <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/powershell_128.svg" width="18" /> On **Windows PowerShell**:
     ```bash
-    Compress-Archive -Path * -DestinationPath lambda_function.zip
+    tar -a -c -f lambda_function.zip *
     ```
 
 Package the **Booking Reserve Service** for deployment:
@@ -67,7 +67,7 @@ Package the **Booking Reserve Service** for deployment:
 
   - <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/powershell_128.svg" width="18" /> On **Windows PowerShell**:
     ```bash
-    Compress-Archive -Path * -DestinationPath lambda_function.zip
+    tar -a -c -f lambda_function.zip *
     ```
 
 Package the **Booking Confirm Service** for deployment:
@@ -88,7 +88,7 @@ Package the **Booking Confirm Service** for deployment:
 
   - <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/powershell_128.svg" width="18" /> On **Windows PowerShell**:
     ```bash
-    Compress-Archive -Path * -DestinationPath lambda_function.zip
+    tar -a -c -f lambda_function.zip *
     ```
 
 ### 2. Database Verification & Reset
