@@ -150,7 +150,7 @@ if __name__ == "__main__":
     res = lambda_handler(home_request, None)
     print("\n----- Home Request -----")
     print(res["statusCode"])
-    print(json.dumps(json.loads(res["body"]), indent=2))
+    print(res["body"])
 
     event_request = {
         "pathParameters": {
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     res = lambda_handler(event_request, None)
     print("\n----- Event Request -----")
     print(res["statusCode"])
-    print(json.dumps(json.loads(res["body"]), indent=2))
+    print(res["body"])
 
     ticket_request = {
         "pathParameters": {
@@ -170,4 +170,4 @@ if __name__ == "__main__":
     res = lambda_handler(ticket_request, None)
     print("\n----- Ticket Request -----")
     print(res["statusCode"])
-    print(json.dumps(json.loads(res["body"]), indent=2))
+    print(res["body"])
