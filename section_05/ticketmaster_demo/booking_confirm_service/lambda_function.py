@@ -117,4 +117,4 @@ if __name__ == "__main__":
     res = lambda_handler(booking_confirm_request, None)
     print("\n----- Booking Confirm Request (Phase 2) -----")
     print(res["statusCode"])
-    print(json.dumps(json.loads(res["body"]), indent=2))
+    print(res["body"])
