@@ -237,6 +237,8 @@ Stop the `waiting_queue_consumer` script:
 Ctrl + C
 ```
 
+> _**Note:** If `Ctrl + C` does not stop the script (which can occasionally happen depending on the terminal or operating system), you can simply close the terminal window running the script instead. For this demo application, it is completely safe to stop the consumer this way._
+
 <br>
 
 ## ✏️ Part 2 – Deploy to AWS

@@ -92,7 +92,7 @@ Package the **Booking Confirm Service** for deployment:
       ForEach-Object { $_.Name } |
       tar -a -c -f lambda_function.zip -T -
     ```
-    > _We use this slightly more defensive version of the `tar` command because the `booking_confirm_service` includes a larger set of dependencies (such as `stripe`). In some cases, the simpler wildcard version can fail on Windows when packaging larger dependency folders._
+    > _**Note:** We use this slightly more defensive version of the `tar` command because the `booking_confirm_service` includes a larger set of dependencies (such as `stripe`). In some cases, the simpler wildcard version can fail on Windows when packaging larger dependency folders._
 
 ### 2. Database Verification & Reset
 
