@@ -111,4 +111,4 @@ if __name__ == "__main__":
     res = lambda_handler(event_request, None)
     print("\n----- Event Request -----")
     print(res["statusCode"])
-    print(res)
+    print(res["body"])

@@ -89,4 +89,4 @@ if __name__ == "__main__":
     res = lambda_handler(booking_reserve_request, None)
     print("\n----- Booking Reserve Request (Phase 1) -----")
     print(res["statusCode"])
-    print(json.dumps(json.loads(res["body"]), indent=2))
+    print(res["body"])
