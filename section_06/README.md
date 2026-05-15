@@ -99,7 +99,7 @@ USER_ID=user_1 python virtual_waiting_queue/lambda_function.py
 
 - <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/powershell_128.svg" width="18" /> On **Windows PowerShell**:
   ```bash
-  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py
+  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py; Remove-Item Env:USER_ID
   ```
 
 Back in the Redis CLI, verify and reset state:
@@ -152,7 +152,7 @@ USER_ID=user_1 python virtual_waiting_queue/lambda_function.py
   ```bash
   python virtual_waiting_queue/lambda_function.py
 
-  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py
+  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py; Remove-Item Env:USER_ID
   ```
 
 Inside the Redis CLI, inspect the current state:
@@ -199,7 +199,7 @@ USER_ID=user_1 python virtual_waiting_queue/lambda_function.py
   ```bash
   python virtual_waiting_queue/lambda_function.py
 
-  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py
+  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py; Remove-Item Env:USER_ID
   ```
 
 After the `user_1` waiting key expires, check the state in Redis CLI again:
@@ -221,7 +221,7 @@ USER_ID=user_1 python virtual_waiting_queue/lambda_function.py
   ```bash
   python virtual_waiting_queue/lambda_function.py
 
-  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py
+  $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py; Remove-Item Env:USER_ID
   ```
 
 Back in the Redis CLI, clean up the state:
