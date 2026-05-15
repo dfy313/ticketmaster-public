@@ -182,7 +182,10 @@ zip -r lambda_function.zip .
 
 - <img src="https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/powershell_128.svg" width="18" /> On **Windows PowerShell**:
   ```bash
-  tar -a -c -f lambda_function.zip *
+  Get-ChildItem -Force -Exclude lambda_function.zip |
+    ForEach-Object { $_.Name } |
+    tar -a -c -f lambda_function.zip -T -
   ```
+  > _**Note:** We use this slightly more defensive version of the `tar` command because the `search_service` includes a larger set of dependencies. In some cases, the simpler wildcard version can fail on Windows when packaging larger dependency folders._
 
 <br>
