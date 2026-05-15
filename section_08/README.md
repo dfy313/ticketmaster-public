@@ -66,7 +66,7 @@ APP_DIR="/home/ubuntu"
 VENV_DIR="$APP_DIR/venv"
 SCRIPT="$APP_DIR/broadcast_dispatcher.py"
 sudo apt update
-sudo apt install -y python3.12-venv
+sudo apt install -y python3-venv
 chown -R ubuntu:ubuntu "$APP_DIR"
 cd "$APP_DIR"
 python3 -m venv venv
