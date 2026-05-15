@@ -16,6 +16,7 @@ apigw = boto3.client(
     aws_secret_access_key=AWS_SECRET_ACCESS_KEY
 )
 
+"""TICKETMASTER_REDIS_URL=redis://default:<password>@<host>:<port>"""
 r = redis.StrictRedis(
     host='<YOUR_REDIS_HOST>',
     port='<YOUR_REDIS_PORT>',
