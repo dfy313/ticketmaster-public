@@ -179,6 +179,7 @@ Inside the Redis CLI, inspect the current state:
 > ```
 
 <br>
+
 After the `admin_user` waiting key expires, inspect the state in Redis CLI again:
 
 - List all keys
