@@ -18,7 +18,7 @@ From project root `~Desktop/ticketmaster_demo`:
 
 ### 1. Load Environment Variables
 
-From the root directory of the project, load the environment variables into your current terminal session.
+From the root directory of the project, load the environment variables into your current terminal session:
 
 ```bash
 source .ticketmaster_env
