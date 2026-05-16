@@ -135,11 +135,15 @@ touch virtual_waiting_queue/waiting_queue_consumer.py
 
 ### 4. Test End-to-End Virtual Waiting Queue Flow Locally
 
+#### Ⓐ 4A — Start the Waiting Queue Consumer
+
 Start the `waiting_queue_consumer` script and leave it running:
 
 ```bash
 python virtual_waiting_queue/waiting_queue_consumer.py
 ```
+
+#### Ⓑ 4B — Add Two Users to the Queue
 
 Run the Lambda authorizer twice — first as the default `admin_user`, then as `user_1`:
 
@@ -172,13 +176,13 @@ Inside the Redis CLI, inspect the current state:
   TTL waiting:1H:admin_user
   ```
 
+Wait for `waiting:1H:admin_user` key to expire:
+
 > ℹ️ **Note:** To speed up queue processing during testing, you can manually reduce the waiting TTL in Redis using the following command:
 >
 > ```
 > EXPIRE waiting:1H:admin_user <NEW_TTL_VALUE>
 > ```
-
-<br>
 
 After the `admin_user` waiting key expires, inspect the state in Redis CLI again:
 
@@ -196,6 +200,8 @@ After the `admin_user` waiting key expires, inspect the state in Redis CLI again
   TTL waiting:1H:user_1
   ```
 
+#### Ⓒ 4C — Re-Run the Lambda Authorizer Before TTL Expiration
+
 Before the TTLs expire, invoke the Lambda authorizer again for both users:
 
 ```bash
@@ -212,11 +218,21 @@ USER_ID=user_1 python virtual_waiting_queue/lambda_function.py
   $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py; Remove-Item Env:USER_ID
   ```
 
+Wait for `waiting:1H:user_1` key to expire:
+
+> ℹ️ **Note:** To speed up queue processing during testing, you can manually reduce the waiting TTL in Redis using the following command:
+>
+> ```
+> EXPIRE waiting:1H:user_1 <NEW_TTL_VALUE>
+> ```
+
 After the `user_1` waiting key expires, check the state in Redis CLI again:
 
 ```bash
 keys *
 ```
+
+#### Ⓓ 4D — Run the Lambda Authorizer One Final Time
 
 Re-run the Lambda authorizer for both users:
 
@@ -233,6 +249,8 @@ USER_ID=user_1 python virtual_waiting_queue/lambda_function.py
 
   $env:USER_ID="user_1"; python virtual_waiting_queue/lambda_function.py; Remove-Item Env:USER_ID
   ```
+
+#### Ⓔ 4E — Clean Up Redis State & Stop Consumer Script
 
 Back in the Redis CLI, clean up the state:
 
