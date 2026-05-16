@@ -363,7 +363,15 @@ zip -r lambda_function.zip .
   tar -a -c -f lambda_function.zip *
   ```
 
-### 3. Redis Verification & Reset
+### 3. Accelerate Waiting Queue Processing During Browser Testing
+
+To speed up waiting queue processing during browser testing, you can manually reduce the wait TTL by running the following command in Redis:
+
+```
+EXPIRE waiting:1H:admin_user <NEW_TTL_VALUE>
+```
+
+### 4. Redis Verification & Reset
 
 Inside the Redis CLI:
 
@@ -376,7 +384,7 @@ Inside the Redis CLI:
   DEL allowed:1H:admin_user
   ```
 
-### 4. Database Verification & Reset
+### 5. Database Verification & Reset
 
 Use a temporary MySQL client container to connect to your database:
 
