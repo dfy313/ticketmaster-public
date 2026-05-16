@@ -96,6 +96,8 @@ Package the **Booking Confirm Service** for deployment:
 
 ### 2. Database Verification & Reset
 
+> _Before running, make sure the environment variables have already been loaded into your current terminal session. You can revisit **[Section 3 → Step 1](/section_03/README.md#1-load-environment-variables)** for the exact command._
+
 Use a temporary MySQL client container to connect to your database:
 
 ```bash
