@@ -172,6 +172,12 @@ Inside the Redis CLI, inspect the current state:
   TTL waiting:1H:admin_user
   ```
 
+> ℹ️ **Note:** To speed up queue processing during testing, you can manually reduce the waiting TTL in Redis using the following command::
+>
+> ```
+> EXPIRE waiting:1H:admin_user <NEW_TTL_VALUE>
+> ```
+
 After the `admin_user` waiting key expires, inspect the state in Redis CLI again:
 
 - List all keys
