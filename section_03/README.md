@@ -16,9 +16,9 @@ This logic is essential for preventing race conditions in high-traffic scenarios
 
 From project root `~Desktop/ticketmaster_demo`:
 
-### 1. Configure Environment Variables
+### 1. Load Environment Variables
 
-After adding `TICKETMASTER_REDIS_URL` to your environment file, reload the variables into your current shell session:
+From the root directory of the project, load the environment variables into your current terminal session.
 
 ```bash
 source .ticketmaster_env
