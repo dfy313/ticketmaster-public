@@ -10,7 +10,7 @@ AWS_SECRET_ACCESS_KEY = "<YOUR_AWS_SECRET_ACCESS_KEY>"
 # Create boto3 client to talk to WebSocket management API
 apigw = boto3.client(
     'apigatewaymanagementapi',
-    region_name='us-east-2',
+    region_name='us-east-2',  # Must match the AWS region where your WebSocket API was deployed
     endpoint_url=WEBSOCKET_CONNECTIONS_BASE_URL,
     aws_access_key_id=AWS_ACCESS_KEY_ID,
     aws_secret_access_key=AWS_SECRET_ACCESS_KEY
