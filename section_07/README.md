@@ -138,6 +138,8 @@ zip -r lambda_function.zip .
 
 ### 4. Test High Traffic Handler Flow in the Browser
 
+> _Before running, make sure the environment variables have already been loaded into your current terminal session. You can revisit **[Section 3 → Step 1](/section_03/README.md#1-load-environment-variables)** for the exact command._
+
 Connect to Redis:
 
 ```bash
