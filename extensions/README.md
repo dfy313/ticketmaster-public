@@ -11,7 +11,9 @@ Each extension below highlights a limitation of the current design, discusses po
 
 ### Current Limitation
 
-The current **Search Service** queries OpenSearch directly, but the system does not yet include a synchronization pipeline between MySQL and OpenSearch. As a result, event data stored in OpenSearch can become stale over time. If events are created, updated, or deleted in MySQL, those changes are not automatically reflected in the search index.
+The current **Search Service** queries OpenSearch directly, but the system does not yet include a synchronization pipeline between MySQL and OpenSearch.
+
+As a result, event data stored in OpenSearch can become stale over time. If events are created, updated, or deleted in MySQL, those changes are not automatically reflected in the search index.
 
 ### Proposed Enhancement
 
@@ -37,7 +39,9 @@ This architecture is similar to the CDC pipeline implemented in the **[URL Short
 
 ### Current Limitation
 
-The current **Search Service** supports a basic OpenSearch `match_phrase` query against event names. While functional, this provides a fairly limited search experience. Users can only search by event name, and the home page simply redirects requests to a standalone search endpoint. Search results are not deeply integrated into the application UI and do not support common features such as filtering, sorting, or pagination.
+The current **Search Service** supports a basic OpenSearch `match_phrase` query against event names.
+
+While functional, this provides a fairly limited search experience. Users can only search by event name, and the home page simply redirects requests to a standalone search endpoint. Search results are not deeply integrated into the application UI and do not support common features such as filtering, sorting, or pagination.
 
 ### Proposed Enhancement
 
