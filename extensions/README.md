@@ -39,9 +39,9 @@ This architecture is similar to the CDC pipeline implemented in the **[URL Short
 
 ### Current Limitation
 
-The current **Search Service** supports a basic OpenSearch `match_phrase` query against event names.
+The current **Search Service** supports a basic OpenSearch `match_phrase` query against event names. While functional, this provides a fairly limited search experience.
 
-While functional, this provides a fairly limited search experience. Users can only search by event name, and the home page simply redirects requests to a standalone search endpoint. Search results are not deeply integrated into the application UI and do not support common features such as filtering, sorting, or pagination.
+Users can only search by event name, and the home page simply redirects requests to a standalone search endpoint. Search results are not deeply integrated into the application UI and do not support common features such as filtering, sorting, or pagination.
 
 ### Proposed Enhancement
 
