@@ -14,7 +14,7 @@ Built for production realism, this system covers everything from ticket locking,
 
 | Section | Content                                                               |
 | ------- | --------------------------------------------------------------------- |
-| 0       | [Ticketmaster Workflow Demo](./section_00)                            |
+| 0       | [Intro & Workflow Demo](./section_00)                                 |
 | 1       | [MySQL Setup & Schema Design](./section_01)                           |
 | 2       | [Event Discovery Service Setup](./section_02/)                        |
 | 3       | [Booking Service Phase 1: Ticket Locking](./section_03/)              |
